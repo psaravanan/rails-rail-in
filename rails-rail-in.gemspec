@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["psaravanan11@gmail.com"]
   spec.summary       = %q{Indian Railways Trains, PNR Status}
   spec.description   = %q{Indian Railways Trains, PNR Status, Features to come IRCTC Availability, Running Status, Map, Arrival Departure, Route, Fare Check...}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/psaravanan/rails-rail-in"
   spec.license       = "MIT"
   spec.rubyforge_project = "rest_client"
   spec.files         = `git ls-files -z`.split("\x0")
