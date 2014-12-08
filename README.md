@@ -22,6 +22,7 @@ Or install it yourself as:
 
 var1 	=	Rails::Rail::In.pnr_status(your_pnr_number)
 # You will get JSON response
+
 ## Contributing
 
 1. Fork it ( https://github.com/[my-github-username]/rails-rail-in/fork )
