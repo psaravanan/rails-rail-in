@@ -1,6 +1,6 @@
 require 'rest_client'
 
-module Rails
+#module Rails
 	class RailIn
 
 	  def get_train
@@ -17,5 +17,5 @@ module Rails
 	  end
 
 	end
-end
+#end
 
