@@ -1,1 +1,1 @@
-require "rails-rail-in"
+require "./rails-rail-in/rail_in"
