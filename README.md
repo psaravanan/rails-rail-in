@@ -18,9 +18,18 @@ Or install it yourself as:
 
     $ gem install rails-rail-in
 
+## Get an API Key
+
+The eRail.in Indian Railways API uses an API key to identify your application. API keys are managed through the eRail.in APIs console. To create your key:
+
+Please send a request to Register
+Upon approval you will be provided with the API key
+Once the service has been activated, you can make HTTP request to the API.
+
 ## Usage
 
-var1 	=	Rails::Rail::In.pnr_status(your_pnr_number)
+train =	RailIn.new
+train.pnr_status(your_pnr_number)
 # You will get JSON response
 
 ## Contributing
