@@ -27,13 +27,11 @@ rail_in =	RailIn.new(eRailKey)
 
 Get the result of all the stations with their station code, name, latitude and longitude.
 
-```ruby
+```json
 rail_in.stations
 
 output:
 -------
-```
-```json
 	{
 		"status" : "OK",
 		"result" : [
@@ -54,13 +52,11 @@ output:
 
 Get details of given PNR number.
 
-```ruby
+```json
 rail_in =	RailIn.new(eRailKey)
 rail_in.pnr_status(pnr_number)
 output:
 -------
-```
-```json
 	{
 		"status" : "OK",
 		"result" :  { 
