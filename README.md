@@ -1,6 +1,6 @@
 # Rails::Rail::In
 
-rails-rail-in is used to find the Indian Railways Info like Trains List, Stations List, Routes, Fare, PNR Status, Seat Availability and more.
+rails-rail-in is to find an Indian Railways Info like Train Lists, Station Lists, Routes, Fare, PNR Status, Seat Availabilities and more.
 
 ## Installation
 
@@ -28,6 +28,7 @@ rail_in =	RailIn.new(eRailKey)
 Get the result of all the stations with their station code, name, latitude and longitude.
 
 ```json
+
 rail_in.stations
 
 output:
@@ -53,8 +54,9 @@ output:
 Get details of given PNR number.
 
 ```json
-rail_in =	RailIn.new(eRailKey)
+
 rail_in.pnr_status(pnr_number)
+
 output:
 -------
 	{
