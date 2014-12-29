@@ -1,36 +1,93 @@
 # Rails::Rail::In
 
-Indian Railways Trains, PNR Status, Features to come IRCTC Availability, Running Status, Map, Arrival Departure, Route, Fare Check...
+rails-rail-in is used to find the Indian Railways Info like Trains List, Stations List, Routes, Fare, PNR Status, Seat Availability.
 
 ## Installation
 
-Add this line to your application's Gemfile:
+To install using Bundler grab the latest stable version:
 
 ```ruby
-gem 'rails-rail-in'
+gem 'rails-rail-in', '-> 1.0.0'
 ```
 
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
+To manually install rails-rail-in via Rubygems simply gem install:
 
     $ gem install rails-rail-in
 
-## Get an API Key
+## API Key
 
-The eRail.in Indian Railways API uses an API key to identify your application. API keys are managed through the eRail.in APIs console. To create your key:
+Follow the below instruction to get an API key
 
-Please send a request to Register
-Upon approval you will be provided with the API key
-Once the service has been activated, you can make HTTP request to the API.
+Go to: http://api.erail.in/#api_key
+To create your key send a email request to eRail Team.
 
 ## Usage
 
-train =	RailIn.new
-train.pnr_status(your_pnr_number)
-# You will get JSON response
+	rail_in =	RailIn.new(eRailKey)
+
+### Stations List
+
+Get the result of all the stations with their station code, name, latitude and longitude.
+
+	```ruby
+	rail_in.stations
+	```
+
+	output:
+	-------
+	```json
+		{
+			"status" : "OK",
+			"result" : [
+				{ 
+					"code" : "NDLS",
+					"name" : "New Delhi"
+				},
+				{ 
+					"code" : "BCT",
+					"name" : "Mumbai Central"
+				},
+				....
+			]
+		}
+	```
+
+### PNR Status
+
+Get details of given PNR number.
+
+	```ruby
+	rail_in =	RailIn.new(eRailKey)
+	rail_in.pnr_status(pnr_number)
+	```
+	output:
+	-------
+	```json
+		{
+			"status" : "OK",
+			"result" :  { 
+				"pnr" : "6533543051",
+				"eticket" : true,
+				"journey" : "09-Sep-2014",
+				"trainno" : "12898",
+				"name" : "BBS PDY EXPRESS",
+				"from" : "VZM",
+				"to" : "MS",
+				"brdg" : "VZM",
+				"passengers" : 
+					[
+						{
+						"bookingstatus" : "RAC 14GNWL",
+						"currentstatus" : "B3 14",
+						"coach" : ""
+						},
+						....
+					],
+				"chart" : "CHART PREPARED",
+				"error" : ""
+			}
+		}
+
 
 ## Contributing
 
