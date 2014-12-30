@@ -1,4 +1,4 @@
-Copyright (c) 2014 saravanan
+Copyright (c) 2014 Saravanan P
 
 MIT License
 
