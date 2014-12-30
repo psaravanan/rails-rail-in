@@ -101,8 +101,6 @@ To know all available methods check on <a href="https://github.com/psaravanan/ra
 
 Copyright © 2014 by Saravanan P
 
-Copyright (c) 2014 Saravanan P
-
 MIT License
 
 Permission is hereby granted, free of charge, to any person obtaining
