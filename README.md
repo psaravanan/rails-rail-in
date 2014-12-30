@@ -85,6 +85,10 @@ output:
 	}
 ```
 
+### Wiki
+
+To know all available methods check on <a href="https://github.com/psaravanan/rails-rail-in/wiki">Wiki </a>
+
 ## Contributing
 
 1. Fork it ( https://github.com/[my-github-username]/rails-rail-in/fork )

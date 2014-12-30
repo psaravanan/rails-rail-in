@@ -1,3 +1,3 @@
 require 'rails-rail-in'
-puts "a = RailIn.new"
+puts "a = RailIn.new(eRailKey)"
 puts "a.pnr_status(YOUR PNR Number)"
